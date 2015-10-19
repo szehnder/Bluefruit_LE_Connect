@@ -140,10 +140,8 @@
 		F0C7709819FF8D25005391F6 /* signalStrength-4.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C7709319FF8D25005391F6 /* signalStrength-4.png */; };
 		F0CBE3561B28C308009E0128 /* RootInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CBE3551B28C308009E0128 /* RootInterfaceController.swift */; };
 		F0CBE3581B28C308009E0128 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CBE3571B28C308009E0128 /* Images.xcassets */; };
-		F0CBE35C1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F0CBE35B1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App.app */; };
 		F0CBE3641B28C309009E0128 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CBE3621B28C309009E0128 /* Interface.storyboard */; };
 		F0CBE3661B28C309009E0128 /* Images-watch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CBE3651B28C309009E0128 /* Images-watch.xcassets */; };
-		F0CBE3691B28C309009E0128 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0CBE3511B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F0CBE3711B28CFAC009E0128 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05E7E0218BEF399005E25F6 /* Images.xcassets */; };
 		F0CCCF9B1B0F266D0061558B /* DFUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CCCF981B0F266D0061558B /* DFUViewController.xib */; };
 		F0CCCF9C1B0F266D0061558B /* DFUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCCF991B0F266D0061558B /* DFUViewController.m */; };
@@ -161,35 +159,48 @@
 		F0F9C4A919E25BF000AF2352 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9C4A819E25BF000AF2352 /* HelpViewController.swift */; };
 		F0F9E3751A78E26000DBCCE4 /* ColorPickerViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F9E3741A78E26000DBCCE4 /* ColorPickerViewController_iPhone.xib */; };
 		F0FB078818C02D9800D263DD /* UARTViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0FB078718C02D9800D263DD /* UARTViewController_iPhone.xib */; };
+		FD6430D41BD504EF0013BEC1 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0CBE3511B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD6430D71BD504EF0013BEC1 /* Adafruit Bluefruit LE Connect WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F0CBE35B1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F0CBE35D1B28C308009E0128 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F0A2C95E16BBE44500F2FD12 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F0CBE35A1B28C308009E0128;
-			remoteInfo = "BluetoothLE Test WatchKit App";
-		};
-		F0CBE3671B28C309009E0128 /* PBXContainerItemProxy */ = {
+		FD6430D21BD504EF0013BEC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F0A2C95E16BBE44500F2FD12 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F0CBE3501B28C308009E0128;
-			remoteInfo = "BluetoothLE Test WatchKit Extension";
+			remoteInfo = "Adafruit Bluefruit LE Connect WatchKit Extension";
+		};
+		FD6430D51BD504EF0013BEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A2C95E16BBE44500F2FD12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CBE35A1B28C308009E0128;
+			remoteInfo = "Adafruit Bluefruit LE Connect WatchKit App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F0CBE3701B28C309009E0128 /* Embed App Extensions */ = {
+		FD6430D81BD504EF0013BEC1 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F0CBE3691B28C309009E0128 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex in Embed App Extensions */,
+				FD6430D41BD504EF0013BEC1 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6430D91BD504EF0013BEC1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD6430D71BD504EF0013BEC1 /* Adafruit Bluefruit LE Connect WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -753,14 +764,14 @@
 				F0A2C96216BBE44500F2FD12 /* Sources */,
 				F0A2C96316BBE44500F2FD12 /* Frameworks */,
 				F0A2C96416BBE44500F2FD12 /* Resources */,
-				F0CBE3701B28C309009E0128 /* Embed App Extensions */,
 				42CE78854B1B3EC9E7437E14 /* Embed Pods Frameworks */,
 				4F937124E7348745E00A2178 /* Copy Pods Resources */,
+				FD6430D91BD504EF0013BEC1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F0CBE3681B28C309009E0128 /* PBXTargetDependency */,
+				FD6430D61BD504EF0013BEC1 /* PBXTargetDependency */,
 			);
 			name = "Adafruit Bluefruit LE Connect";
 			productName = "BLE Test";
@@ -778,27 +789,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				F0CBE35E1B28C308009E0128 /* PBXTargetDependency */,
 			);
 			name = "Adafruit Bluefruit LE Connect WatchKit Extension";
 			productName = "BluetoothLE Test WatchKit Extension";
 			productReference = F0CBE3511B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		F0CBE35A1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0CBE36E1B28C309009E0128 /* Build configuration list for PBXNativeTarget "Adafruit Bluefruit LE Connect WatchKit App" */;
 			buildPhases = (
 				F0CBE3591B28C308009E0128 /* Resources */,
+				FD6430D81BD504EF0013BEC1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD6430D31BD504EF0013BEC1 /* PBXTargetDependency */,
 			);
 			name = "Adafruit Bluefruit LE Connect WatchKit App";
 			productName = "BluetoothLE Test WatchKit App";
 			productReference = F0CBE35B1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -807,11 +819,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BLE;
-				LastUpgradeCheck = 0500;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Adafruit Industries";
 				TargetAttributes = {
 					F0A2C96516BBE44500F2FD12 = {
-						DevelopmentTeam = 2X94RM7457;
+						DevelopmentTeam = MD988WZMG9;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -820,11 +833,11 @@
 					};
 					F0CBE3501B28C308009E0128 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 2X94RM7457;
+						DevelopmentTeam = MD988WZMG9;
 					};
 					F0CBE35A1B28C308009E0128 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 2X94RM7457;
+						DevelopmentTeam = MD988WZMG9;
 					};
 				};
 			};
@@ -960,7 +973,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CBE3581B28C308009E0128 /* Images.xcassets in Resources */,
-				F0CBE35C1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1085,15 +1097,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F0CBE35E1B28C308009E0128 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F0CBE35A1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App */;
-			targetProxy = F0CBE35D1B28C308009E0128 /* PBXContainerItemProxy */;
-		};
-		F0CBE3681B28C309009E0128 /* PBXTargetDependency */ = {
+		FD6430D31BD504EF0013BEC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F0CBE3501B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit Extension */;
-			targetProxy = F0CBE3671B28C309009E0128 /* PBXContainerItemProxy */;
+			targetProxy = FD6430D21BD504EF0013BEC1 /* PBXContainerItemProxy */;
+		};
+		FD6430D61BD504EF0013BEC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0CBE35A1B28C308009E0128 /* Adafruit Bluefruit LE Connect WatchKit App */;
+			targetProxy = FD6430D51BD504EF0013BEC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1147,6 +1159,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adafruit Industries LLC (2X94RM7457)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1181,6 +1195,7 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adafruit Industries LLC (2X94RM7457)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -1205,12 +1220,14 @@
 				CODE_SIGN_ENTITLEMENTS = "Adafruit Bluefruit LE Connect/BluetoothLE Test.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLE Test/BluetoothLE Test-Prefix.pch";
 				INFOPLIST_FILE = "BLE Test/BluetoothLE Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG ";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanzehnder.bluefruitconnect;
 				PRODUCT_NAME = "Adafruit Bluefruit LE Connect";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BLE Test/BluetoothLE Test-Bridging-Header.h";
@@ -1229,11 +1246,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Adafruit Bluefruit LE Connect/BluetoothLE Test.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLE Test/BluetoothLE Test-Prefix.pch";
 				INFOPLIST_FILE = "BLE Test/BluetoothLE Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanzehnder.bluefruitconnect;
 				PRODUCT_NAME = "Adafruit Bluefruit LE Connect";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BLE Test/BluetoothLE Test-Bridging-Header.h";
@@ -1251,6 +1270,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1267,10 +1287,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanzehnder.bluefruitconnect.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1284,6 +1308,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1298,9 +1323,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanzehnder.bluefruitconnect.watchkitapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -1316,6 +1345,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1329,13 +1360,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				IBSC_MODULE = BluetoothLE_Test_WatchKit_Extension;
 				INFOPLIST_FILE = "BluetoothLE Test WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanzehnder.bluefruitconnect.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -1352,6 +1384,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1362,13 +1396,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				IBSC_MODULE = BluetoothLE_Test_WatchKit_Extension;
 				INFOPLIST_FILE = "BluetoothLE Test WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seanzehnder.bluefruitconnect.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};

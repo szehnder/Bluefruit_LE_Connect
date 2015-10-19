@@ -59,26 +59,25 @@ class BLEInterfaceController: WKInterfaceController {
 
     
     func sendRequest(request:[String:AnyObject]){
-        
-        WKInterfaceController.openParentApplication(request,
-            reply: { (replyInfo, error) -> Void in
-                //parse reply info
-                switch (replyInfo?["connected"] as? Bool, error) { //received correctly formatted reply
-                case let (connected, nil) where connected != nil:
-                    if connected == true {  //app has connection to ble device
-//                        NSLog("reply received == connected")
-                        self.respondToConnected()
-                    }
-                    else {  //app has NO connection to ble device
-//                        NSLog("reply received == not connected")
-                        self.respondToNotConnected()
-                    }
-                case let (_, .Some(error)):
-                    println("reply received with error: \(error)") // received reply w error
-                default:
-                    println("reply received with no error or data ...") // received reply with no data or error
-                }
-        })
+//        WKInterfaceController.openParentApplication(request,
+//            reply: { (replyInfo, error) -> Void in
+//                //parse reply info
+//                switch (replyInfo["connected"] as? Bool, error) { //received correctly formatted reply
+//                case let (connected, nil) where connected != nil:
+//                    if connected == true {  //app has connection to ble device
+////                        NSLog("reply received == connected")
+//                        self.respondToConnected()
+//                    }
+//                    else {  //app has NO connection to ble device
+////                        NSLog("reply received == not connected")
+//                        self.respondToNotConnected()
+//                    }
+//                case let (_, .Some(error)):
+//                    print"reply received with error: \(error)") // received reply w error
+//                default:
+//                    print("reply received with no error or data ...") // received reply with no data or error
+//                }
+//        })
         
         
     }

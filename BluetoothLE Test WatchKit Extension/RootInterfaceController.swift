@@ -245,9 +245,9 @@ class ColorPickerInterfaceController: BLEInterfaceController {
         var blue:CGFloat = 0.0
         var alpha:CGFloat = 0.0
         color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        var redInt = Int(Float(255)*Float(red))
-        var blueInt = Int(Float(255)*Float(blue))
-        var greenInt = Int(Float(255)*Float(green))
+        let redInt = Int(Float(255)*Float(red))
+        let blueInt = Int(Float(255)*Float(blue))
+        let greenInt = Int(Float(255)*Float(green))
         let request = [ "type":"sendData",
                         "red":redInt,
                         "blue":blueInt,
@@ -277,7 +277,7 @@ class ColorPickerInterfaceController: BLEInterfaceController {
         var alpha:CGFloat = 0.0
         swatchColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
         
-        var newColor = UIColor(red: CGFloat(value), green: green, blue: blue, alpha: 1.0)
+        let newColor = UIColor(red: CGFloat(value), green: green, blue: blue, alpha: 1.0)
         setRGBColor(newColor)
         
     }
@@ -292,7 +292,7 @@ class ColorPickerInterfaceController: BLEInterfaceController {
         var alpha:CGFloat = 0.0
         swatchColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
         
-        var newColor = UIColor(red: red, green: CGFloat(value), blue: blue, alpha: 1.0)
+        let newColor = UIColor(red: red, green: CGFloat(value), blue: blue, alpha: 1.0)
         setRGBColor(newColor)
         
     }
@@ -307,7 +307,7 @@ class ColorPickerInterfaceController: BLEInterfaceController {
         var alpha:CGFloat = 0.0
         swatchColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
         
-        var newColor = UIColor(red: red, green: green, blue: CGFloat(value), alpha: 1.0)
+        let newColor = UIColor(red: red, green: green, blue: CGFloat(value), alpha: 1.0)
         setRGBColor(newColor)
         
     }

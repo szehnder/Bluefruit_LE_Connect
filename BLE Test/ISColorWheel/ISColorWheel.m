@@ -6,6 +6,7 @@
  */
 
 #import "ISColorWheel.h"
+#import <UIKit/UIKit.h>
 
 typedef struct
 {
@@ -289,11 +290,11 @@ static PixelRGB ISColorWheel_HSBToRGB (float h, float s, float v)
     float b = 1.0;
     float a = 1.0;
     
-    double hh = (double)h;
-    double hs = (double)s;
-    double hb = (double)b;
-    double ha = (double)a;
-    
+    CGFloat hh = (CGFloat)h;
+    CGFloat hs = (CGFloat)s;
+    CGFloat hb = (CGFloat)b;
+    CGFloat ha = (CGFloat)a;
+
     [color getHue:&hh saturation:&hs brightness:&hb alpha:&ha];
     
     self.brightness = hb;
